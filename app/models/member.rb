@@ -1,5 +1,5 @@
 class Member
-  attr_accessor :name, :power, :bio
+  attr_accessor :name, :power, :bio, :team
   
   @@all = []
   
@@ -8,6 +8,10 @@ class Member
     @power = attr[:power]
     @bio = attr[:bio]
     @@all << self
+  end
+  
+  def self.all
+    @@all
   end
   
 end
