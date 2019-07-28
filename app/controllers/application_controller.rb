@@ -13,7 +13,6 @@ class App < Sinatra::Base
     params[:team][:members].each do |member|
       @team.add_member(Member.new(member))
     end
-    binding.pry
     
     erb :team
   end
