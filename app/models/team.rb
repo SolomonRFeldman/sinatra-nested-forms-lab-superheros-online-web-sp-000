@@ -15,3 +15,12 @@ class Team
   end
   
 end
+
+class Test
+  attr_accessor :members
+  
+  def initialize
+    @members = []
+  end
+  
+  def
