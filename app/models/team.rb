@@ -14,13 +14,9 @@ class Team
     @@all
   end
   
-end
-
-class Test
-  attr_accessor :members
-  
-  def initialize
-    @members = []
+  def add_member(member)
+    @members << member
+    member.team = self
   end
   
-  def
+end
